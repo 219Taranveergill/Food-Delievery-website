@@ -1,0 +1,221 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#logo{
+    margin: 4px,5px;
+    padding: 8px;
+}
+
+#logo img{
+    margin: 4px, 5px;
+    height: 70px;
+    /* padding: 8px; */
+}
+
+/*navbar area */
+#navbar{
+    display: flex;
+    top: 0px;
+   position: sticky;
+   align-items: center;
+    
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+#navbar ul li a {
+    color: white;
+   padding: 10px;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   opacity: 0.5;
+}
+
+
+/*          home      area             */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    height: 400px;
+    padding: 10px 200px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#home::before{
+    content: "";
+    background: url(https://researchnarrative.com/wp-content/uploads/2017/12/shutterstock_638203369-e1513958209638.jpg) no-repeat center center/cover ;
+    position: absolute;
+    height: 56%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+/*     service    area            */
+#services{
+    display: flex;
+    position: relative;
+    align-items: center;    
+}
+
+.box{
+    border: 5px solid black;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    border-radius: 24px;
+    width: 33%;
+    background-color: burlywood;
+}
+
+.box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+
+
+/*clients area*/
+#clients{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#clients-area{
+    position: relative;
+}
+
+.item{
+    padding: 15px;
+}
+.item img{
+    height: 180px;
+    padding: 20px;
+}
+
+#clients-area::before{
+content: "";
+position: absolute;
+background-color: khaki;
+height: 95%;
+width: 100%;
+z-index: -1;
+opacity: 0.8;
+}
+
+
+
+/* contact section */
+#contact-area{
+    position: relative;
+}
+
+#contact-area::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    background: url(https://www.ergo.co.uk/wp-content/uploads/2017/10/workshop-session-bonus-background.jpg)no-repeat center center/cover;
+}
+#contact{
+    display: flex;
+  align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+#contact input,
+#contact textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#contact form{
+    width: 40%;
+}
+
+#contact label{
+    font-size: 25px;
+}
+
+/* footer area*/
+footer{
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+
+
+/*                  utility       classes */
+.h-primary{
+    font-size: 50px;
+    padding: 10px 8px;
+    margin: 10px 8px;
+}
+
+.btn{
+  font-size: 20px;
+  padding: 8px 5px;
+  margin: 4px 5px;
+  cursor: pointer;
+  border: 3px solid black;
+}
+
+.btn:hover{
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+}
+
+
+.h1-area{
+    font-size: 50px;
+    padding: 10px 8px;
+    margin: 10px ;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+    
+}
+
